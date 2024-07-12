@@ -1,12 +1,28 @@
 ---
 import Layout from "../layout/Layout.astro";
 import "../../public/css/style.css";
-import Header from "../components/Header.astro";
+import Header from "../components/Header/Header.astro";
 import Footer from "../components/Footer.astro";
-import Card from "../components/Card.astro";
+import Card from "../components/Card/Card.astro";
+import Carrusel from "../components/Carrusel/Carrusel.astro";
 ---
 
 <Layout title="Peque HBD🎂">
+	<Header
+		title="Nuestra Historia de Amor."
+		subtitle="Cada momento contigo es un tesoro, mi amor ❤️"
+	/>
+<!-- 	<Carrusel /> -->
+    <Card />
+	<Footer />
+</Layout>
+
+
+
+
+<!-- mi diseño -->
+
+<!-- <Layout title="Peque HBD🎂">
 	<Header
 		title="Nuestra Historia de Amor"
 		subtitle="Cada momento contigo es un tesoro, mi amor ❤️"
@@ -23,3 +39,4 @@ import Card from "../components/Card.astro";
 	</div>
 	<Footer />
 </Layout>
+ -->

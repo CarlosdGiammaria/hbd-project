@@ -1,0 +1,29 @@
+.text-title {
+  font-family: "Playwrite AT", cursive;
+  font-size: 3.4rem;
+}
+
+.text-subtitle {
+  font-size: 2.5rem;
+  font-family: "Playwrite AT", cursive;
+}
+.head{
+  padding: 18px;
+}
+
+@media (max-width: 680px) {
+  .text-title {
+    font-size: 3rem;
+  }
+  .text-subtitle {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 380px) {
+  .text-title {
+    font-size: 2rem;
+  }
+  .text-subtitle {
+    font-size: 1.5rem;
+  }
+}

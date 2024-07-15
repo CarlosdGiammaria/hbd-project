@@ -4,8 +4,8 @@ import "../../public/css/style.css";
 import Header from "../components/Header/Header.astro";
 import Footer from "../components/Footer.astro";
 import Card from "../components/Card/Card.astro";
-import { getImages } from "../utils/getImages";
-const images = getImages();
+import { getImagesWithTexts } from "../utils/getImages";
+const imagesWithTexts = getImagesWithTexts();
 ---
 
 <Layout title="Peque HBD🎂">
@@ -13,37 +13,16 @@ const images = getImages();
 		title="Nuestra Historia de Amor."
 		subtitle="Cada momento contigo es un tesoro, mi amor ❤️"
 	/>
-	<div class="gallery">
-		{images.map((image) => <Card img={image} />)}
-
+	<div class="flex justify-center">
+		<audio
+			id="musica"
+			src="/audio/kany-garcia-para-siempre.mp3"
+			controls
+			autoplay
+			loop></audio>
 	</div>
-	<Footer/>
-</Layout>
-
-
-
-
-
-
-
-
-<!-- mi diseño -->
-
-<!-- <Layout title="Peque HBD🎂">
-	<Header
-		title="Nuestra Historia de Amor"
-		subtitle="Cada momento contigo es un tesoro, mi amor ❤️"
-	/>
-	<div class="contain">
-		<div class="services">
-			<Card
-				img="../../public/image/im13.jpg"
-				alt="foto"
-				title="Amor"
-				text="lorem impsum ......."
-			/>
-		</div>
+	<div class="gallery">
+		{imagesWithTexts.map(({ src, text }) => <Card img={src} text={text} />)}
 	</div>
 	<Footer />
 </Layout>
- -->
